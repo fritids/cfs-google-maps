@@ -13,17 +13,12 @@ $cfs_google_maps_addon = new cfs_google_maps_addon();
 
 class cfs_google_maps_addon
 {
-    public $api_url;
-
-    function __construct()
-    {
-        $this->api_url = 'https://uproot.us/plugin-api/';
+    function __construct() {
         add_filter('cfs_field_types', array($this, 'cfs_field_types'));
     }
 
-    function cfs_field_types($field_types)
-    {
-        $field_types['google_maps'] = dirname(__FILE__) . '/google_maps.php';
+    function cfs_field_types( $field_types ) {
+        $field_types['google_maps'] = dirname( __FILE__ ) . '/google_maps.php';
         return $field_types;
     }
 }

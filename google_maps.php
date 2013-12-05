@@ -2,16 +2,16 @@
 
 class cfs_google_maps extends cfs_field
 {
-    function __construct($parent)
-    {
+
+    function __construct( $parent ) {
         $this->name = 'google_maps';
-        $this->label = 'Google Maps';
+        $this->label = __( 'Google Maps', 'cfs' );
         $this->parent = $parent;
     }
 
-    function html($field)
-    {
-        $latlng = empty($field->value) ? '40.4,-98.7' : $field->value;
+
+    function html( $field ) {
+        $latlng = empty( $field->value ) ? '40.4,-98.7' : $field->value;
     ?>
         <script>
         (function($) {
@@ -49,8 +49,8 @@ class cfs_google_maps extends cfs_field
     <?php
     }
 
-    function input_head()
-    {
+
+    function input_head() {
     ?>
         <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <?php
