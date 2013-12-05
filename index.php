@@ -3,7 +3,7 @@
 Plugin Name: CFS - Google Maps Add-on
 Plugin URI: https://uproot.us/
 Description: Adds a Google Maps field type.
-Version: 1.0.0
+Version: 1.1.0
 Author: Matt Gibbs
 Author URI: https://uproot.us/
 License: GPL2
